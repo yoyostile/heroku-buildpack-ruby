@@ -64,6 +64,7 @@ private
           return true
         end
 
+        precompile = rake.task("bower:install")
         precompile = rake.task("assets:precompile")
         return true unless precompile.is_defined?
 
